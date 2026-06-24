@@ -1,4 +1,3 @@
-import React from 'react'
 import { useRoutes, Link } from 'react-router-dom'
 import Locations from './pages/Locations'
 import LocationEvents from './pages/LocationEvents'
@@ -37,7 +36,7 @@ const App = () => {
     <div className='app'>
 
       <header className='main-header'>
-        <h1>UnityGrid Plaza</h1>
+        <h1>ArtScene</h1>
 
         <div className='header-buttons'>
           <Link to='/' role='button'>Home</Link>

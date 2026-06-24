@@ -1,23 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap');
 
 #root {
-    background: url('./assets/unitygrid.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background: linear-gradient(135deg, #0a0a0f 0%, #1a0a2e 50%, #0d1b2a 100%);
     background-attachment: fixed;
-    background-color: var(--secondary-color);
-    font-family: Nunito Sans, Verdana, sans-serif;
-    height: 100vh;
-    --main-color: rgb(217, 29, 242);
-    --secondary-color: rgb(3, 1, 64);
+    font-family: 'DM Sans', Verdana, sans-serif;
+    min-height: 100vh;
+    --main-color: #c849f4;
+    --secondary-color: #0a0a0f;
+    --accent-color: #f4c842;
     --primary: var(--main-color);
     --primary-hover: rgb(111, 28, 166);
     --primary-focus: rgb(217, 29, 242);
     --secondary: var(--secondary-color);
-    --secondary-hover: rgb(4, 66, 191);
-    --secondary-focus: rgb(111, 28, 166);
     --h1-color: white;
     --h2-color: white;
     --h3-color: white;
@@ -30,28 +24,33 @@
     --form-element-active-background-color: white;
 }
 
-#root h1, #root h2, #root h3 {
-    text-transform: uppercase;
-    margin-bottom: 0px;
-}
-
 #root h1 {
-    font-family: Rock Salt, cursive;
-    font-size: 3em;
-    font-weight: bold;
-    text-shadow: 3px 3px 4px black;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4em;
+    font-weight: 400;
+    letter-spacing: 6px;
+    color: white;
+    text-shadow: 0 0 30px rgba(200, 73, 244, 0.6);
+    margin: 0;
 }
 
 #root h2 {
-    font-family: Nunito Sans, Verdana, sans-serif;
-    font-size: 2em;
-    font-weight: 800;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0;
 }
 
 #root h3 {
-    font-family: Nunito Sans, Verdana, sans-serif;
-    font-size: 1.3em;
-    font-weight: 800;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 #root main {
@@ -61,18 +60,22 @@
 
 #root [role=button] {
     text-transform: uppercase;
-    font-weight: 900;
-    font-size: 1.5em;
-    border: 2px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-weight: 700;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    border: 1.5px solid rgba(255,255,255,0.4);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+#root [role=button]:hover {
+    background: rgba(200, 73, 244, 0.25);
+    border-color: var(--main-color);
 }
 
 #root article {
-    padding: 0px;
-}
-
-#root select {
-    width: 400px;
+    padding: 0;
 }
